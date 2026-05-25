@@ -7,7 +7,7 @@ from . import services
 
 def login_required_decorator(func):
     return login_required(func, login_url='login_page')
-print('Hi')
+
 
 @login_required_decorator
 def logout_page(request):
